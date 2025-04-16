@@ -59,7 +59,7 @@ def process_data(input_path, output_path):
             out=self.seq(x)
             out2=torch.zeros(out.shape)
             out2[:, [0]] = -4 + 8 * out[:, [0]]  
-            out2[:, [1]] = -4 + 8.8 * out[:, [1]] 
+            out2[:, [1]] = -4 + 8.5 * out[:, [1]] 
             return out2
     FNN=FNN_test(input_size=4,hidden_size=374,output_size=2,layers=3)
     FNN.to(device=device)
